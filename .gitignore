@@ -7,3 +7,5 @@ data/raw/*
 /notebooks/thuringia_weather_2025.csv
 /src/data/__pycache__
 data/raw/water_data
+/notebooks/thuringia_weather_2025.csv
+/notebooks/thuringia_weather_cache
