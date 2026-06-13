@@ -11,7 +11,7 @@
 * activate venv
 * `pip install .` to install the package
 -> this will also install dependencies
-    * use ` pip install -e .` to refresh package during development
+    * use ` pip install -e .` to continuously refresh package during development
 * `from watts_up import data, model, dashboard` in python
 
 ## Conda
