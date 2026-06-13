@@ -3,3 +3,6 @@ numpy
 matplotlib
 openpyxl
 dotenv
+scipy
+seaborn
+statsmodels
