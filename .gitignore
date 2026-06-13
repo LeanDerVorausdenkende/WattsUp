@@ -2,3 +2,5 @@
 venv
 /data/raw/water_data
 /data/raw/weather_data
+/notebooks/thuringia_weather_2025.csv
+/notebooks/thuringia_weather_cache
