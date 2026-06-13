@@ -20,7 +20,5 @@ scikit-learn>=1.3      # metrics, walk-forward splits, linear baseline
 lightgbm>=4.0          # main model
 shap>=0.44             # explainability (SHAP values for LightGBM)
 prophet>=1.1           # statistical benchmark
-
-# ── Optional: deep learning bonus ─────────────────────────────────────────────
-# torch>=2.0           # uncomment if attempting LSTM
-# tensorflow>=2.13     # alternative to torch
+pyarrow>=1.2            # time handling in fetch scripts
+optuna>=3.0             # hyperparameter tuning
