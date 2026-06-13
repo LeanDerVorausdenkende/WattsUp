@@ -1,7 +1,21 @@
+# metadata
+# ========
 [project]
 name = "watts_up"
 version = "0.0.1"
 
+# requirements
+# ============
+dependencies = [
+    "numpy",
+    "pandas",
+    "openpyxl",
+    "matplotlib",
+    "dotenv",
+]
+
+# build system
+# ============
 [build-system]
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
