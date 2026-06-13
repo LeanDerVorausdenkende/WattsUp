@@ -391,7 +391,7 @@ def download_csv(datastream_id: int, start_iso: str, end_iso: str, output_path: 
 if __name__ == "__main__":
 
     # 1. List every station on the server
-    # list_all_stations()
+     list_all_stations()
 
     # 2. Search stations by partial name
     # search_stations("Eisenach")
@@ -423,4 +423,4 @@ if __name__ == "__main__":
     # 11. Download a time window directly as CSV (no JSON parsing)
     # download_csv(7301, "2020-01-01T00:00:00Z", "2020-12-31T00:00:00Z", "output.csv")
 
-    pass
+    #pass

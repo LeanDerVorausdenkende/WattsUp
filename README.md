@@ -174,3 +174,22 @@ Calendar features (hour, minute, weekday, month, season) are derived from the ti
 > Wie lässt sich erneuerbare Energie zuverlässig vorhersagen, obwohl sie von Wetter und Umweltfaktoren abhängt? Die Stadtwerke Jena stehen vor der Herausforderung, für Wasserkraftanlagen möglichst genaue viertelstündliche Erzeugungsprognosen für den Folgetag zu erstellen.
 
 > How can renewable energy be reliably predicted, even though it depends on weather and environmental factors? Stadtwerke Jena faces the challenge of generating the most accurate possible quarter-hourly production forecasts for the following day for its hydropower plants. These forecasts are crucial for ensuring grid stability and fairly distributing costs within the energy system.
+# About the project
+
+[Challenge](Challenge.md) on Hack the Paradise 2026 Hackathon.
+
+
+# Installation
+
+## Python venv
+
+* navigate to repository root
+* activate venv
+* `pip install .` to install the package
+-> this will also install dependencies
+    * use ` pip install -e .` to continuously refresh package during development
+* `from watts_up import data, model, dashboard` in python
+
+## Conda
+
+* to be done

@@ -22,3 +22,11 @@ shap>=0.44             # explainability (SHAP values for LightGBM)
 prophet>=1.1           # statistical benchmark
 pyarrow>=1.2            # time handling in fetch scripts
 optuna>=3.0             # hyperparameter tuning
+pandas
+numpy
+matplotlib
+openpyxl
+dotenv
+scipy
+seaborn
+statsmodels
