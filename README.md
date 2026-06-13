@@ -58,16 +58,11 @@ WattsUp/
 ## Quickstart
 
 ```bash
-# 1. Create environment and install dependencies
-setup.bat
 
-# 2. Activate the virtual environment
-.venv\Scripts\activate
-
-# 3. Build the feature table from raw data
+# 1. Build the feature table from raw data
 python src/data/preprocess.py
 
-# 4. Train and evaluate (default: last 60 days as test, with Optuna tuning)
+# 2. Train and evaluate (default: last 60 days as test, with Optuna tuning)
 python src/model/train.py
 
 # Fast run without tuning (~30 sec):
@@ -80,16 +75,6 @@ python src/model/train.py --plant Burgau_kW --no-tune
 
 ---
 
-## Forecast viewer
-
-Open **`forecast_viewer.html`** in any browser (no server needed).
-
-- Switch between Unterpreilipp and Burgau
-- Pick any day from the 61-day test set (Mar–May 2026)
-- Chart shows: **actual** (white) vs **LightGBM** (blue) vs **persistence baseline** (orange dashed)
-- Metric cards update per day: MAE, RMSE, skill score
-
----
 
 ## Pipeline
 
