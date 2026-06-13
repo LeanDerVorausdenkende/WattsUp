@@ -1,0 +1,13 @@
+[project]
+name = "watts_up"
+version = "0.0.1"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"watts_up" = "src"}
+
+[tools.setuptools.packages.find]
+where = "src"
