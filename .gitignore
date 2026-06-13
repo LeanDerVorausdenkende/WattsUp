@@ -1,4 +1,9 @@
 .venv
 venv
-/data/raw/water_data
+data/raw/water_data
+data/raw/*
 /data/raw/weather_data
+/notebooks/thuringia_weather_cache
+/notebooks/thuringia_weather_2025.csv
+/src/data/__pycache__
+data/raw/water_data
