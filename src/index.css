@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1D9E75;
+  --color-primary-light: #22C594;
+  --color-page: #F1F5F9;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #F8FAFC;
+  --color-border: #E2E8F0;
+  --color-text: #0F172A;
+  --color-muted: #64748B;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+  --color-blue: #3B82F6;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F1F5F9;
+  color: #0F172A;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI Variable Text", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Monospace for numbers / instrument readouts */
+.mono {
+  font-family: ui-monospace, "SF Mono", "Cascadia Code", "Cascadia Mono",
+    "Fira Code", "Fira Mono", Consolas, "Liberation Mono", monospace;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+/* Count-up reveal on load */
+@keyframes count-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.count-up {
+  animation: count-up 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Live pulse dot */
+@keyframes live-pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(29, 158, 117, 0.5); }
+  60%       { opacity: 0.7; box-shadow: 0 0 0 5px rgba(29, 158, 117, 0); }
+}
+.live-dot {
+  animation: live-pulse 2.2s ease-in-out infinite;
+  border-radius: 50%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .count-up { animation: none; opacity: 1; transform: none; }
+  .live-dot  { animation: none; }
+}
+
+/* Thin scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
