@@ -12,6 +12,10 @@ dependencies = [
     "openpyxl",
     "matplotlib",
     "dotenv",
+    "scikit-learn",
+    "joblib",
+    "streamlit",
+    "plotly"
 ]
 
 # build system
